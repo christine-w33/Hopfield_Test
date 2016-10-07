@@ -26,7 +26,6 @@ function plot_image(input_states)
                                                     color = color, linewidth=0.5)
       ax[:add_patch](square)
   end
-
 end
 
 #calculate the energy of the system
@@ -42,9 +41,7 @@ end
 
 #Train and store weights into 4*5 matrix titled weights
 function train_weights(patterns)
-
   scalefactor = 1./n
-
   weights = zeros(m,m)
     for i = 1:m-1
         for j = i+1:m
@@ -52,9 +49,7 @@ function train_weights(patterns)
           weights[j,i] = weights[i,j]
         end
     end
-
   weights
-
 end
 
 #input pattern to be recognized (what percentage of noise can we introduce?)
@@ -89,7 +84,6 @@ function recall(states, weights)
       states = deepcopy(update_states)
     end
   end
-
   states
 end
 
