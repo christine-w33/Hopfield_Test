@@ -187,7 +187,7 @@ function test_both(capacity)
 end
 
 
-#20 units. 5*5. Black is 1, white is -1
+#20 units. 4*5. Black is 1, white is -1
 letters = [-1 1 1 1 1 -1 1 1 1 1 -1 1 1 1 1 -1 -1 1 1 1; #letter L
             -1 1 1 1 -1 -1 -1 1 -1 -1 -1 1 -1 1 -1 -1 1 1 1 -1; #letter M
             1 -1 -1 -1 1 1 -1 1 1 1 1 -1 1 1 1 1 -1 -1 -1 1; #letter C
@@ -261,12 +261,10 @@ function plot_both()
   end
 end
 
-#function plot_energyGradient()
+#uncomment to generate plots
 
-
-plot_capacity()
+#plot_capacity()
 #plot_noise()
 #plot_both()
-#plot_energyGradient()
 
 plt[:show]()
